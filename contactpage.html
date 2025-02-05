@@ -1,0 +1,132 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Mia's Soccer Academy</title>
+            
+            <!-- googlefont -->
+            <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+            
+            <!-- W3.CSS for navigation styling -->
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <!-- my external style guide -->
+            <link rel="stylesheet" href="style.css"> 
+        
+            <style>
+                /* background */
+                body {
+                    font-family: "Playwright", "Playwright IN";
+                    background-color: rgb(220, 233, 241);
+                    background-size: cover; /* cover the full page */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed; /* keeps in place while scrolling */
+                    color: black; /* text color */
+                    margin: 0;
+                    padding: 0;
+                }
+                 
+                /* navbar */
+                    
+                .w3-bar { 
+                    display: flex;
+                    justify-content: center; /* centers items horizontally */
+                    padding: 10px 0;
+                    flex-wrap: nowrap;
+                }
+
+                .w3-bar-item { /* navbar font size/color */
+                    font-size: 20px;
+                    color: black;
+                    white-space: nowrap; 
+                }
+        
+                .w3-bar-item:hover {
+                    background: #4CAF50; /* Green hover effect */
+                    color: white;
+                }
+                /* Responsive adjustments for smaller screens */
+                @media (max-width: 650px) {
+                    .w3-bar-item {
+                        font-size: 16px; /* Decrease font size on smaller screens */
+                    }
+                }
+
+                @media (max-width: 450px) {
+                    .w3-bar-item {
+                        font-size: 14px; /* Even smaller on very small screens */
+                    }
+                }
+                /* Text Style */
+
+                h1 {
+                    font-size: 80px;
+                    text-align: center;
+                    font-family: "Playwright", "Playwright IN";  
+                }
+
+                form {
+                    text-align: center;
+                }
+
+                /* media queries for headers */
+                @media screen and (max-width: 650px) {
+                    h1 {
+                        font-size: 60px; /* Reduce font size */
+                    }
+                }
+
+                /* for smaller screens */
+                @media screen and (max-width: 450px) {
+                    h1 {
+                        font-size: 40px; 
+                    }
+                }
+
+                /* style for line separations */
+                hr {
+                    height: 1px;
+                    border: 1;
+                    border-top: 1px solid #000000;
+                    margin: 1em 0;
+                    padding: 2;
+                }
+                
+            </style>
+        </head>
+        <body>  
+            <!-- Linking files and setting nav bar-->
+            <div class="nav-container">
+                <div class="w3-bar">
+                    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+                    <a href="contactpage.html" class="w3-bar-item w3-button w3-grey">Contact</a>  <!-- Updated link -->
+                    <a href="reviews.html" class="w3-bar-item w3-button">Reviews</a>
+                </div>
+            </div>
+        
+            <!-- Main Content -->
+
+            <hr />
+            <h1>Contact Us!</h1>
+            <hr />
+            <form method="get" action = "#">
+                <label>Name: <br></label>
+                <input type="text" name="'name" id="name" />
+                <br>
+                <label>Email:<br> </label>
+                <input type="text" name="'email" id="email" />
+                <br>
+                <label>Phone Number: <br></label>
+                <input type="text" name="'phone number" id="phone number" />
+                <br>
+                <label>Inquiry: <br></label>
+                <textarea id="inquiry" name="inquiry" rows="4" cols="50">
+                </textarea>
+                <br>
+                <input type="submit">   
+            </form>
+
+        </body>
+ </html>

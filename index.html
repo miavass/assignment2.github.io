@@ -1,0 +1,167 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Mia's Soccer Academy</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            
+            <!-- googlefont -->
+            <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+            
+            <!-- W3.CSS for navigation styling -->
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+            <!-- Internal Style Sheet -->
+            <style> 
+
+                /* Background Image */
+                body {
+                    font-family: "Playwright", "Playwright IN";
+                    background-image: url('soccerBR.jpg'); /* Ensure this image is in the same folder */
+                    background-size: cover; /* Cover the full page */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed; /* Keeps it in place while scrolling */
+                    color: black; /* Text color for readability */
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                /* navbar */
+                    
+                .w3-bar { 
+                    display: flex;
+                    justify-content: center; /* centers items horizontally */
+                    padding: 10px 0;
+                    flex-wrap: nowrap; /* makes it so text doesn't go onto new lines*/
+                }
+        
+                .w3-bar-item { /* navbar font size/color */
+                    font-size: 20px;
+                    color: black;
+                    white-space: nowrap; /* makes it so text doesn't go onto new lines*/
+                }
+        
+                .w3-bar-item:hover {
+                    background: #4CAF50; /* Green hover effect */
+                    color: white;
+                }
+                
+                 /* Responsive adjustments for smaller screens */
+                @media (max-width: 650px) {
+                    .w3-bar-item {
+                        font-size: 16px; /* Decrease font size on smaller screens */
+                    }
+                }
+
+                @media (max-width: 450px) {
+                    .w3-bar-item {
+                        font-size: 14px; /* Even smaller on very small screens */
+                    }
+                }
+
+                /* Text Style */
+                h1 {
+                    font-size: 100px;
+                    text-align: center;
+                    font-family: "Playwright", "Playwright IN";
+                }
+
+                h2 {
+                    font-size: 50px;
+                    text-align: center;
+                    font-family: "Playwright", "Playwright IN";
+                    line-height: 1.7;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    text-align: center;
+                    font-family: "Playwright", "Playwright IN";
+                    line-height: 1.7;
+                }
+                h4 {
+                    font-size: 30px;
+                    text-align: center;
+                    font-family: "Playwright", "Playwright IN";
+                    line-height: 1.7;
+                }
+                /* media queries for headers */
+                @media screen and (max-width: 650px) {
+                    h1 {
+                        font-size: 60px; /* Reduce font size */
+                    }
+                    h2 {
+                        font-size: 40px;
+                    }
+                    h3, h4 {
+                        font-size: 24px;
+                    }
+                }
+
+                /* for smaller screens */
+                @media screen and (max-width: 450px) {
+                    h1 {
+                        font-size: 40px; 
+                    }
+                    h2 {
+                        font-size: 30px;
+                    }
+                    h3, h4 {
+                        font-size: 20px;
+                    }
+                }
+                /* style for line separations */
+                hr {
+                    height: 1px;
+                    border: 1;
+                    border-top: 1px solid #000000;
+                    margin: 1em 0;
+                    padding: 2;
+                }
+
+                .nav-link {
+                    font-size: 30px;
+                    text-align: center;
+                    display: block;
+                    font-weight: bold; /* Optional: Makes it bolder */
+                }
+
+            </style>
+        </head>
+        <body>  
+
+            <!-- Linking files and setting nav bar-->
+
+            <div class="nav-container">
+                <div class="w3-bar">
+                    <a href="index.html" class="w3-bar-item w3-button w3-grey">Home</a>
+                    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+                    <a href="contactpage.html" class="w3-bar-item w3-button">Contact</a>  <!-- Updated link -->
+                    <a href="reviews.html" class="w3-bar-item w3-button">Reviews</a>
+                </div>
+            </div>
+        
+            <!-- Main Content -->
+             <hr />
+            <h1>Mia's Soccer Academy</h1>
+            <h2><b>Premier Soccer Training</b></h2>
+            <hr />
+            <h3>Looking for professional soccer coaching for your adolescent? Look no further!
+                Mia's Soccer Academy is the place for you! Here, we offer intensive yet 
+                positive and fun
+                trainings, focusing on technical skills, fitness, teamwork, and field IQ.
+            </h3>
+            <h4>
+                <hr />
+                <b>Services include: </b><div>
+                <ul>
+                    <li>one-on-one private clinics</li>
+                    <li>group clinics</li>
+                    <li>seasonal camps</li>
+                </ul>
+            </h4>
+            <a href="contactpage.html" class="nav-link">Contact Us</a>
+        </body>
+    </html>

@@ -1,0 +1,103 @@
+/* background */
+body {
+    font-family: "Playwright", "Playwright IN";
+    background-color: rgb(220, 233, 241);
+    background-size: cover; /* Cover the full page */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps it in place while scrolling */
+    color: black; /* Text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+
+.w3-bar { 
+    display: flex;
+    justify-content: center; /* centers items horizontally */
+    padding: 10px 0;
+    flex-wrap: nowrap;
+}
+
+.w3-bar-item { /* navbar font size/color */
+    font-size: 20px;
+    color: black;
+    white-space: nowrap;
+}
+
+.w3-bar-item:hover {
+    background: #4CAF50; /* Green hover effect */
+    color: white;
+}
+
+/* navbar responsive adjustments for smaller screens */
+@media (max-width: 650px) {
+    .w3-bar-item {
+        font-size: 16px; /* Decrease font size on smaller screens */
+    }
+}
+
+@media (max-width: 450px) {
+    .w3-bar-item {
+        font-size: 14px; /* Even smaller on very small screens */
+    }
+}
+
+/* Text Style */
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: "Playwright", "Playwright IN";
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Playwright", "Playwright IN";
+    line-height: 1.7;
+}
+ 
+
+/* style for line separations */
+hr {
+    height: 1px;
+    border: 1;
+    border-top: 1px solid #000000;
+    margin: 1em 0;
+    padding: 2;
+}
+
+/* headers responsive adjustments for smaller screens */
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 40px; /* Reduce font size */
+    }
+    h2 {
+        font-size: 20px;
+    }
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+/* for smaller screens */
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 30px; 
+    }
+    h2 {
+        font-size: 15px;
+    }
+    img {
+        max-width: 40%;
+        height: auto;
+    }
+} 
+
+/*not doing anything*/
+img {
+    max-width: 100%;
+    height: auto;
+}
